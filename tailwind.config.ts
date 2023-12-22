@@ -21,7 +21,7 @@ const config: Config = {
           90: '#141414'
         },
         orange: {
-          50: '#ff814c'
+          50: '#FF814C'
         },
         blue: {
           70: '#021639'
