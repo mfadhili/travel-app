@@ -1,10 +1,26 @@
 import React from 'react';
+import Button from "@/components/Button";
+import Image from "next/image";
 
 function GetApp() {
     return (
-        <div>
-            GetApp
-        </div>
+        <section className={"flexCenter w-full flex-col pb-[100px] "}>
+            <div className="get-app">
+                {/*LEFT SIDE*/}
+                <div className="z-20 flex w-full flex-1 flex-col items-start justify-center">
+                    <h2 className="bold-40 lg:bold-64 xl:max-w-[320pxz]">Get for free now!</h2>
+                    <p className="regular-16 text-gray-20">Available on iOS and Android</p>
+                    <div className="flex w-full flex-col xl:flex-row gap-3 whitespace-nowrap">
+                        <Button type={"button"} title={"App Store"} variant={"btn_white"} full icon={"/apple.svg"}/>
+                        <Button type={"button"} title={"Play store"} variant={"btn_dark_green_outline"} full icon={"/android.svg"}/>
+                    </div>
+                </div>
+                {/*RIGHT SIDE*/}
+                <div className="flex flex-1 items-center justify-center">
+                    <Image src={"/phones.png"} alt={"phones"} width={550} height={870} />
+                </div>
+            </div>
+        </section>
     );
 }
 
